@@ -1,127 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MCCS – Service Officiel (un peu)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCCS — Service Officieusement Sérieux</title>
 
-  <style>
-    body {
-      background: #000;
-      color: #ff0000;
-      font-family: monospace;
-      margin: 0;
-      padding: 20px;
-    }
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    h1, h2 {
-      text-align: center;
-      text-shadow: 0 0 10px red;
-    }
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
 
-    .box {
-      border: 2px solid red;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 900px;
-      background: #120000;
-    }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
 
-    .warning {
-      color: #fff;
-      background: red;
-      padding: 10px;
-      text-align: center;
-      font-weight: bold;
-      animation: blink 1s infinite;
-    }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
 
-    @keyframes blink {
-      50% { opacity: 0.5; }
-    }
+        .section {
+            background: #111;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
 
-    ul li {
-      margin: 8px 0;
-    }
+        .section h2 {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
 
-    footer {
-      text-align: center;
-      opacity: 0.6;
-      margin-top: 40px;
-      font-size: 0.8em;
-    }
+        .badge {
+            display: inline-block;
+            background: #fff;
+            color: #000;
+            padding: 5px 10px;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
 
-    .btn {
-      display: inline-block;
-      background: red;
-      color: black;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+        .rules li {
+            margin: 8px 0;
+        }
 
-    .btn:hover {
-      background: white;
-    }
-  </style>
+        .gif-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gif-grid img {
+            width: 100%;
+            border: 2px solid #222;
+        }
+
+        .warning {
+            background: #1a1a1a;
+            border-left: 5px solid white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            opacity: 0.5;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #ccc;
+        }
+    </style>
 </head>
+
 <body>
+<div class="container">
 
-  <div class="warning">
-    ⚠ AVIS OFFICIEL – SERVICE SEMI-SÉRIEUX ⚠
-  </div>
+    <h1>MCCS</h1>
 
-  <h1>MCCS</h1>
-  <h2>Manager of Comportement Control Service</h2>
+    <div class="section">
+        <span class="badge">SEMI-SÉRIEUX</span>
+        <h2>📌 C’est quoi le MCCS ?</h2>
+        <p>
+            Le <strong>MCCS (Manager of Comportement Control Service)</strong> est un service
+            <em>officieusement officiel</em> dédié à l’observation, l’analyse et la dénonciation
+            (souvent déplacée) des comportements douteux sur Internet.
+            <br><br>
+            C’est sérieux.  
+            Mais c’est du troll.  
+            Mais c’est sérieux quand même.
+        </p>
+    </div>
 
-  <div class="box">
-    <h2>📌 C’est quoi le MCCS ?</h2>
-    <p>
-      Le MCCS est un service communautaire à vocation critique, chargé de
-      surveiller, analyser et signaler les comportements douteux sur Internet.
-    </p>
-    <p>
-      C’est <strong>sérieux dans le fond</strong>, mais traité avec
-      <strong>humour, second degré et troll contrôlé</strong>.
-    </p>
-    <p>
-      Si ça dégénère, ça s’arrête. Toujours.
-    </p>
-  </div>
+    <div class="section">
+        <h2>📜 Règles fondamentales</h2>
+        <ul class="rules">
+            <li>Respecter le MCCS (même si personne ne sait comment)</li>
+            <li>Le troll est autorisé, l’acharnement non</li>
+            <li>Si ça dégénère → on arrête</li>
+            <li>Tout est faux jusqu’à preuve du contraire</li>
+            <li>Tout est vrai si c’est drôle</li>
+        </ul>
+    </div>
 
-  <div class="box">
-    <h2>🏛 Hiérarchie MCCS</h2>
-    <ul>
-      <li><strong>MCCSC</strong> – Social Credit (niveau maximal)</li>
-      <li>Logistique de Renseignement</li>
-      <li>Logistique de Management</li>
-      <li>Logistique de Logic (outils)</li>
-      <li>Logistique de Sécurité (LOCKDOWN inclus)</li>
-      <li>Logistique de Réponse</li>
-      <li>Logistique de Supervision (fondation du système)</li>
-    </ul>
-  </div>
+    <div class="section warning">
+        ⚠️ AVERTISSEMENT  
+        <br>
+        Toute personne jugée « youtubeur poubelle » peut être signalée.
+        <br>
+        Aucune garantie de justice.  
+        Aucune garantie de logique.
+    </div>
 
-  <div class="box">
-    <h2>📜 Règle principale</h2>
-    <p>
-      Le MCCS critique, observe et documente.
-      <br>
-      <strong>Pas de harcèlement réel. Pas de débordement.</strong>
-    </p>
-  </div>
+    <div class="section">
+        <h2>💀 MEMES OFFICIELS MCCS</h2>
+        <div class="gif-grid">
+            <img src="https://media.tenor.com/mfsGxYT1EyMAAAAM/stan-twt-skeleton.gif" alt="skeleton">
+            <img src="https://media.tenor.com/4bXR4zB0uVkAAAAM/the-rock.gif" alt="rock">
+            <img src="https://media.tenor.com/sR2izduV7n8AAAAM/patrick-star-screaming.gif" alt="patrick">
+            <img src="https://media.tenor.com/8K6pKZcQJzAAAAAM/cat-staring.gif" alt="cat">
+        </div>
+    </div>
 
-  <div class="box" style="text-align:center;">
-    <h2>🔗 Accès RAAAGH</h2>
-    <a class="btn" href="https://rayzindra.github.io/RAAGH/" target="_blank">
-      ACCÉDER AU DOSSIER
-    </a>
-  </div>
+    <div class="section" style="text-align:center;">
+        <h2>🖱️ Action inutile</h2>
+        <button onclick="alert('Analyse en cours… résultat : RAAAGH')">
+            LANCER UNE ANALYSE MCCS
+        </button>
+    </div>
 
-  <footer>
-    MCCS © Service non officiel, semi-sérieux, parfaitement conscient de lui-même.
-  </footer>
+    <div class="footer">
+        MCCS © Service très sérieux mais pas trop • supervision > hiérarchie
+    </div>
 
+</div>
 </body>
 </html>
